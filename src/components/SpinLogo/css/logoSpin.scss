@@ -1,0 +1,51 @@
+@for $i from 0 through 1 {
+  .circle-#{$i} {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: transparent;
+    animation: popin-anim 1s ease 0.5s + ($i/3);
+  }
+}
+
+.logo {
+  @extend .circle-0;
+  border-radius: 50%;
+  animation: scale-anim 1s ease 0.9s both;
+
+  img {
+    width: 100%;
+    transform: scale(0.6);
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+  }
+}
+
+.logo-wrapper {
+  @extend .circle-0;
+  animation: rot-anim 3s linear;
+}
+
+@keyframes scale-anim {
+  0% { transform: scale(0); }
+  100% { transform: scale(0.8); }
+}
+@keyframes rot-anim {
+  0% { transfrom: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes popin-anim {
+  0% {
+    transform: scale(0.1);
+    box-shadow: 0 0 1px 2px;
+  }
+  60% {
+    transform: scale(0.9);
+    box-shadow: 0 0 1px 4px;
+    opacity: 1;
+  }
+  100% { opacity: 0; box-shadow: 0 0 1px 1px; }
+}

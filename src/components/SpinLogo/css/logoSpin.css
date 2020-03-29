@@ -1,0 +1,126 @@
+.circle-0, .logo, .logo-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: transparent;
+  -webkit-animation: popin-anim 1s ease 0.5s;
+          animation: popin-anim 1s ease 0.5s;
+}
+
+.circle-1 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: transparent;
+  -webkit-animation: popin-anim 1s ease 0.83333s;
+          animation: popin-anim 1s ease 0.83333s;
+}
+
+.logo {
+  border-radius: 50%;
+  -webkit-animation: scale-anim 1s ease 0.9s both;
+          animation: scale-anim 1s ease 0.9s both;
+}
+
+.logo img {
+  width: 100%;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.logo-wrapper {
+  -webkit-animation: rot-anim 3s linear;
+          animation: rot-anim 3s linear;
+}
+
+@-webkit-keyframes scale-anim {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@keyframes scale-anim {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@-webkit-keyframes rot-anim {
+  0% {
+    transfrom: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rot-anim {
+  0% {
+    transfrom: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes popin-anim {
+  0% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    -webkit-box-shadow: 0 0 1px 2px;
+            box-shadow: 0 0 1px 2px;
+  }
+  60% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-box-shadow: 0 0 1px 4px;
+            box-shadow: 0 0 1px 4px;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-box-shadow: 0 0 1px 1px;
+            box-shadow: 0 0 1px 1px;
+  }
+}
+
+@keyframes popin-anim {
+  0% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    -webkit-box-shadow: 0 0 1px 2px;
+            box-shadow: 0 0 1px 2px;
+  }
+  60% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-box-shadow: 0 0 1px 4px;
+            box-shadow: 0 0 1px 4px;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-box-shadow: 0 0 1px 1px;
+            box-shadow: 0 0 1px 1px;
+  }
+}
+/*# sourceMappingURL=logoSpin.css.map */

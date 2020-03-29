@@ -1,0 +1,12 @@
+.App {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+.container {
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: -3px 4px 5px 0px rgba(0,0,0,0.1);
+}
