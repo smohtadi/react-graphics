@@ -1,0 +1,28 @@
+.bar-container {
+  position: relative;
+  box-shadow: -5px 0px 10px 0px rgba(0,0,0,0.2);
+}
+.bar {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+}
+.shine {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  animation: shine-anim 1s ease infinite;
+}
+.shine-bar {
+  height: 100%;
+  width: 10%;
+  background-color: rgba(248, 241, 223, 0.1);
+  filter: blur(5px);
+  border-radius: inherit;
+}
+@keyframes shine-anim {
+  0% { transform: translateX(0) skew(50deg); }
+  100% { transform: translateX(90%) skew(10deg);; }
+}

@@ -1,14 +1,14 @@
 import React from 'react';
-import './App.css';
-import SpinLogo from './SpinLogo';
-
+import Button from './Button/Button';
 function App() {
   return (
-    <div className="App">
-      <div className="container">
-        <SpinLogo /> 
+    <React.Fragment>
+      <div className="container m-3">
+        <Button variant="success">
+          SEND
+        </Button>
       </div>
-    </div>
+    </React.Fragment>
   );
 }
 
